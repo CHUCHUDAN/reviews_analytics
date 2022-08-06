@@ -9,5 +9,12 @@ with open("reviews.txt","r") as f:
 
 print("每筆平均資料長度是", sum/len(data))
 	
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
 
+print("一共有", len(new), "筆小於100的資料")
 	
+print(new[0])
+print(new[1])
